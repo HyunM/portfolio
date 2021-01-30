@@ -6,6 +6,7 @@ import Services from "../components/Services"
 import Jobs from "../components/Jobs"
 import Projects from "../components/Projects"
 import Blogs from "../components/Blogs"
+import { Helmet } from "react-helmet"
 export default ({ data }) => {
   const {
     allStrapiProjects: { nodes: projects },
@@ -14,6 +15,7 @@ export default ({ data }) => {
 
   return (
     <Layout>
+      <Helmet title="Myung" defer={false} />
       <Hero />
       <Services />
       <Jobs />
