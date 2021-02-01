@@ -14,7 +14,9 @@ const Project = ({ description, title, github, stack, url, image, index }) => {
         <h3>{title || "default title"}</h3>
 
         {description.split("\n").map((item, i) => (
-          <p className="project-desc">{item}</p>
+          <p className="project-desc" key={i}>
+            {item}
+          </p>
         ))}
 
         <div className="project-stack">
