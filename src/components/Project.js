@@ -1,7 +1,12 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Image from "gatsby-image"
-import { FaGithubSquare, FaShareSquare } from "react-icons/fa"
+import {
+  FaGithubSquare,
+  FaShareSquare,
+  FaLink,
+  FaYoutube,
+} from "react-icons/fa"
 const Project = ({ description, title, github, stack, url, image, index }) => {
   console.log({ title, url, github, image })
   return (
@@ -25,12 +30,68 @@ const Project = ({ description, title, github, stack, url, image, index }) => {
           })}
         </div>
         <div className="project-links">
-          <a href={github}>
-            <FaGithubSquare className="project-icon" />
-          </a>
-          <a href={url}>
-            <FaShareSquare className="project-icon" />
-          </a>
+          {title === "Daily Report - Web Program" && (
+            <>
+              <a href={github}>
+                <FaGithubSquare className="project-icon" />
+              </a>
+              <a href={url}>
+                <FaLink className="project-icon" />
+              </a>
+            </>
+          )}
+          {title === "Material Management System - Web Program" && (
+            <>
+              <a href={github}>
+                <FaGithubSquare className="project-icon" />
+              </a>
+              <a href={url}>
+                <FaLink className="project-icon" />
+              </a>
+            </>
+          )}
+          {title === "Lunch Order System - Web Program" && (
+            <>
+              <a href={url}>
+                <FaLink className="project-icon" />
+              </a>
+            </>
+          )}
+          {title === "Agreement Management System" && (
+            <>
+              <a href={github}>
+                <FaGithubSquare className="project-icon" />
+              </a>
+            </>
+          )}
+          {title === "Visual Radio - Web Program" && (
+            <>
+              <a href={url}>
+                <FaYoutube className="project-icon" />
+              </a>
+            </>
+          )}
+          {title === "Stop Addiction - Smartphone Application" && (
+            <>
+              <a href={url}>
+                <FaYoutube className="project-icon" />
+              </a>
+            </>
+          )}
+          {title === "Automatic Trash Can - Embedded System" && (
+            <>
+              <a href={url}>
+                <FaYoutube className="project-icon" />
+              </a>
+            </>
+          )}
+          {title === "Escape Room Game - Windows Program" && (
+            <>
+              <a href={url}>
+                <FaYoutube className="project-icon" />
+              </a>
+            </>
+          )}
         </div>
       </div>
     </article>
