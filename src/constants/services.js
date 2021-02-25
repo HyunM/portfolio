@@ -4,14 +4,14 @@ export default [
   {
     id: 1,
     icon: <FaCode className="service-icon" />,
-    title: "Front-End",
-    text: `It covers HTML, CSS, and Javascript. Recently, it is based on Next.js and is developed using React.`,
+    title: "Software Development",
+    text: `Develop software using React in front-end and NodeJS in back-end. Recently I usually use NextJS to do static or server side rendering. `,
   },
   {
     id: 2,
     icon: <FaSketch className="service-icon" />,
-    title: "Database",
-    text: `Mainly deal with MSSQL. Use queries to analyze data, or extract data and represent it as a chart or table on the web. Use Stored Procedure and Job Scheduling.`,
+    title: "Data Analysis",
+    text: `Mainly deal with MSSQL. Use queries to analyze data, or extract data and represent it as a chart or table on the web with Stored Procedure or Job Scheduling.`,
   },
   {
     id: 3,
