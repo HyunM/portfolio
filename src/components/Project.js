@@ -30,7 +30,7 @@ const Project = ({ description, title, github, stack, url, image, index }) => {
           })}
         </div>
         <div className="project-links">
-          {title === "Daily Report - Web Program" && (
+          {title === "Daily Report" && (
             <>
               <a href={github}>
                 <FaGithubSquare className="project-icon" />
@@ -40,7 +40,7 @@ const Project = ({ description, title, github, stack, url, image, index }) => {
               </a>
             </>
           )}
-          {title === "Material Management System - Web Program" && (
+          {title === "Material Management System" && (
             <>
               <a href={github}>
                 <FaGithubSquare className="project-icon" />
@@ -50,7 +50,7 @@ const Project = ({ description, title, github, stack, url, image, index }) => {
               </a>
             </>
           )}
-          {title === "Lunch Order System - Web Program" && (
+          {title === "Lunch Order System" && (
             <>
               <a href={url}>
                 <FaLink className="project-icon" />
@@ -89,6 +89,16 @@ const Project = ({ description, title, github, stack, url, image, index }) => {
             <>
               <a href={url}>
                 <FaYoutube className="project-icon" />
+              </a>
+            </>
+          )}
+          {title === "Dashboard" && (
+            <>
+              <a href={github}>
+                <FaGithubSquare className="project-icon" />
+              </a>
+              <a href={url}>
+                <FaLink className="project-icon" />
               </a>
             </>
           )}
