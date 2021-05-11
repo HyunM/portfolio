@@ -5,7 +5,7 @@ const data = [
   {
     id: 1,
     icon: <FaLinkedin className="social-icon"></FaLinkedin>,
-    url: "https://www.linkedin.com/in/hyun-myung-kim-9b0a1614b",
+    url: "https://www.linkedin.com/in/hyunmyung",
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const data = [
   {
     id: 3,
     icon: <FaInstagram className="social-icon"></FaInstagram>,
-    url: "https://www.instagram.com/wise_____k",
+    url: "https://www.instagram.com/wise_myung",
   },
 ]
 const links = data.map(link => {
