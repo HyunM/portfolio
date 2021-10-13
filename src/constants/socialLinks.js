@@ -15,7 +15,7 @@ const data = [
   {
     id: 3,
     icon: <FaInstagram className="social-icon"></FaInstagram>,
-    url: "https://www.instagram.com/wise_myung",
+    url: "https://www.instagram.com/hmk_dev",
   },
 ]
 const links = data.map(link => {
