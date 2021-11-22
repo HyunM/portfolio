@@ -30,6 +30,33 @@ const Project = ({ description, title, github, stack, url, image, index }) => {
           })}
         </div>
         <div className="project-links">
+          {title === "Training program for new employees" && (
+            <>
+              <a href={github}>
+                <FaGithubSquare className="project-icon" />
+              </a>
+              <a href={url}>
+                <FaLink className="project-icon" />
+              </a>
+            </>
+          )}
+          {title === "Company Website" && (
+            <>
+              <a href={github}>
+                <FaGithubSquare className="project-icon" />
+              </a>
+              <a href={url}>
+                <FaLink className="project-icon" />
+              </a>
+            </>
+          )}
+          {title === "Map for construction projects" && (
+            <>
+              <a href={github}>
+                <FaGithubSquare className="project-icon" />
+              </a>
+            </>
+          )}
           {title === "Daily Report" && (
             <>
               <a href={github}>
@@ -40,6 +67,7 @@ const Project = ({ description, title, github, stack, url, image, index }) => {
               </a>
             </>
           )}
+
           {title === "Material Management System" && (
             <>
               <a href={github}>
@@ -89,16 +117,6 @@ const Project = ({ description, title, github, stack, url, image, index }) => {
             <>
               <a href={url}>
                 <FaYoutube className="project-icon" />
-              </a>
-            </>
-          )}
-          {title === "Dashboard" && (
-            <>
-              <a href={github}>
-                <FaGithubSquare className="project-icon" />
-              </a>
-              <a href={url}>
-                <FaLink className="project-icon" />
               </a>
             </>
           )}
